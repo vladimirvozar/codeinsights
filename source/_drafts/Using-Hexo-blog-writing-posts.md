@@ -74,7 +74,7 @@ Common workflow to follow when writing posts would be:
 - generate website/blog content
 
 If you remember, in the previous article, when we were configuring blog-level settings, we have set *default_layout* to have a value of *draft*.
-This means, that by executing ```hexo new``` command, we would get a new draft page generated.
+This means, that by executing ```hexo new name-of-the-post``` command, we would get a new draft page generated.
 
 Detailed instructions about writing new posts can be found in [official Hexo documentation](https://hexo.io/docs/writing.html).
 
