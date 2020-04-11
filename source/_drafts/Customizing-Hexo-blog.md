@@ -6,16 +6,16 @@ categories: [Hexo, Blog]
 ---
 Step-By-Step Creating a Hexo blog post series:
 
-1. [Installing Hexo blog and adding a new theme]()
-2. **Customizing Hexo blog**
-3. [Using Hexo blog - writing posts]()
-4. [Deploying Hexo blog to GitHub Pages]()
+1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/)
+2. **Customizing a Hexo blog**
+3. [Using Hexo blog - writing posts](https://www.codeinsights.net/2020/03/Using-Hexo-blog-writing-posts/)
+4. [Deploying Hexo blog to GitHub Pages](https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/)
 
 <br/>
 
-> This article is also available on [Exception Not Found](https://exceptionnotfound.net/customizing-hexo-blog/) blog
+> This article is also available on [Exception Not Found](https://exceptionnotfound.net/customizing-hexo-blog/) blog.
 
-In the [first part]() of this series, we have generated an empty blog, we have installed the *clean-blog* theme, and applied it instead of the default one that came with an initially generated blog. At this moment, our blog source code is available in a [GitHub repository](https://github.com/vladimirvozar/hexo-blog-create) under commit with *commit_id = 778d366*.
+In the [first part](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/) of this series, we have generated an empty blog, we have installed the *clean-blog* theme, and applied it instead of the default one that came with an initially generated blog. At this moment, our blog source code is available in a [GitHub repository](https://github.com/vladimirvozar/hexo-blog-create) under commit with *commit_id = 778d366*.
 (*git checkout 778d366*)
 
 > A finished blog that we are building in this series is available [online](https://vladimirvozar.github.io/hexo-blog-create/), served on a GitHub Pages server. The source code can be seen on [this GitHub repository](https://github.com/vladimirvozar/hexo-blog-create).
@@ -119,4 +119,4 @@ At this moment, we have a nicely configured blog that is ready for use. The foll
 - installed additional plugins
 
 
-In the next post, we will start writing posts, we will add *tags* and *categories* pages, and we will describe how to generate the content that will be deployed.
+In the [next post](https://www.codeinsights.net/2020/03/Using-Hexo-blog-writing-posts/), we will start writing posts, we will add *tags* and *categories* pages, and we will describe how to generate the content that will be deployed.
