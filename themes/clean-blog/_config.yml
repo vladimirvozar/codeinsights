@@ -9,7 +9,7 @@ menu:
 #    icon: github
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: 
+menu_title: Vladimir Vozar
 
 # URL of the Home page image
 index_cover: /img/banner2.jpg
@@ -37,10 +37,10 @@ addthis:
 favicon: /img/favicon.ico
 
 # Social Accounts
-twitter_url:
+twitter_url: https://twitter.com/vladimir_vozar
 twitter_handle:
 facebook_url:
-github_url:
+github_url: https://github.com/vladimirvozar
 gitlab_url:
-linkedin_url:
-mailto:
+linkedin_url: https://www.linkedin.com/in/vladimir-vozar-64093676/
+mailto: vozarvladimir@gmail.com
