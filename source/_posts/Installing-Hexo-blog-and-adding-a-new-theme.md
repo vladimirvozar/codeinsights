@@ -16,9 +16,9 @@ date: 2020-04-24 17:24:02
 Step-By-Step Creating a Hexo blog post series:
 
 1. **Installing Hexo blog and adding a new theme**
-2. [Customizing a Hexo blog](https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/)
-3. [Using Hexo blog - writing posts](https://www.codeinsights.net/2020/03/Using-Hexo-blog-writing-posts/Using-Hexo-blog-writing-posts/)
-4. [Deploying Hexo blog to GitHub Pages](https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/)
+2. [Customizing a Hexo blog](https://www.codeinsights.net/2020/04/Customizing-Hexo-blog/)
+3. [Using Hexo blog - writing posts](https://www.codeinsights.net/2020/04/Using-Hexo-blog-writing-posts/Using-Hexo-blog-writing-posts/)
+4. [Deploying Hexo blog to GitHub Pages](https://www.codeinsights.net/2020/04/Deploying-Hexo-blog-to-GitHub-Pages/)
 
 <br/>
 
@@ -127,4 +127,4 @@ To sum up, these are the steps we went through in this part:
 - served our Hexo blog locally
 - installed and activated (*[clean-blog](https://github.com/klugjo/hexo-theme-clean-blog)*) theme
 
-In the [second part](https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/) of this post series, we will be installing some useful Hexo plugins, applying blog and theme-level configurations, we will add personal informations to our blog and in the end we should have a fully configured blog that is ready for use.
+In the [second part](https://www.codeinsights.net/2020/04/Customizing-Hexo-blog/) of this post series, we will be installing some useful Hexo plugins, applying blog and theme-level configurations, we will add personal informations to our blog and in the end we should have a fully configured blog that is ready for use.

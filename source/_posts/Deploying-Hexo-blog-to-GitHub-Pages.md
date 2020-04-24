@@ -15,7 +15,7 @@ date: 2020-04-24 17:25:06
 
 Step-By-Step Creating a Hexo blog post series:
 
-1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/)
+1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/04/Installing-Hexo-blog-and-adding-a-new-theme/)
 2. [Customizing a Hexo blog](https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/)
 3. [Using Hexo blog - writing posts](https://www.codeinsights.net/2020/03/Using-Hexo-blog-writing-posts/)
 4. **Deploying Hexo blog to GitHub Pages**

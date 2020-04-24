@@ -15,16 +15,16 @@ date: 2020-04-24 17:24:48
 
 Step-By-Step Creating a Hexo blog post series:
 
-1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/)
-2. [Customizing a Hexo blog](https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/)
+1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/04/Installing-Hexo-blog-and-adding-a-new-theme/)
+2. [Customizing a Hexo blog](https://www.codeinsights.net/2020/04/Customizing-Hexo-blog/)
 3. **Using Hexo blog - writing posts**
-4. [Deploying Hexo blog to GitHub Pages](https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/)
+4. [Deploying Hexo blog to GitHub Pages](https://www.codeinsights.net/2020/04/Deploying-Hexo-blog-to-GitHub-Pages/)
 
 <br/>
 
 > This article is also available on [Exception Not Found](https://exceptionnotfound.net/using-hexo-blog-writing-posts/) blog.
 
-The [previous post](https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/) has described some useful blog customizations. By making these changes, we have configured our blog to suit our needs. We have also installed a *hexo-browsersync* plugin, which is helpful while writing posts with Hexo.
+The [previous post](https://www.codeinsights.net/2020/04/Customizing-Hexo-blog/) has described some useful blog customizations. By making these changes, we have configured our blog to suit our needs. We have also installed a *hexo-browsersync* plugin, which is helpful while writing posts with Hexo.
 
 > A finished blog that we are building in this series is available [online](https://vladimirvozar.github.io/hexo-blog-create/), served on a GitHub Pages server. The source code can be seen on [this GitHub repository](https://github.com/vladimirvozar/hexo-blog-create).
 
@@ -138,4 +138,4 @@ In this part we have:
 - generated *public* folder
 - explained post creating workflow by first using drafts
 
-The [last part](https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/) of this series will explain how to organize and configure our blog for easy deploying, and we will deploy our blog to GitHub pages.
+The [last part](https://www.codeinsights.net/2020/04/Deploying-Hexo-blog-to-GitHub-Pages/) of this series will explain how to organize and configure our blog for easy deploying, and we will deploy our blog to GitHub pages.
