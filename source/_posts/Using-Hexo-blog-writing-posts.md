@@ -1,9 +1,18 @@
 ---
 title: Using Hexo blog - writing posts
-subtitle: Let's see the differences between pages, drafts, and posts in Hexo. We will write our first post and generate website content.
-tags: [Hexo, Blog, ENF]
-categories: [Hexo, Blog]
+tags:
+  - Hexo
+  - Blog
+  - ENF
+categories:
+  - Hexo
+  - Blog
+subtitle: >-
+  Let's see the differences between pages, drafts, and posts in Hexo. We will
+  write our first post and generate website content.
+date: 2020-04-24 17:24:48
 ---
+
 Step-By-Step Creating a Hexo blog post series:
 
 1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/)

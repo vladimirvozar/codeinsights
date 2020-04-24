@@ -1,9 +1,18 @@
 ---
 title: Installing Hexo blog and adding a new theme
-subtitle: Generating a static blog website with Hexo Framework. Simple Hexo Framework setup, as well as installation of new Hexo theme.
-tags: [Hexo, Blog, ENF]
-categories: [Hexo, Blog]
+tags:
+  - Hexo
+  - Blog
+  - ENF
+categories:
+  - Hexo
+  - Blog
+subtitle: >-
+  Generating a static blog website with Hexo Framework. Simple Hexo Framework
+  setup, as well as installation of new Hexo theme.
+date: 2020-04-24 17:24:02
 ---
+
 Step-By-Step Creating a Hexo blog post series:
 
 1. **Installing Hexo blog and adding a new theme**

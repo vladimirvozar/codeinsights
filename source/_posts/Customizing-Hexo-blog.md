@@ -1,9 +1,18 @@
 ---
 title: Customizing a Hexo blog
-subtitle: Customizing a Hexo blog by applying blog and theme-level settings, and installing some useful Hexo plugins.
-tags: [Hexo, Blog, ENF]
-categories: [Hexo, Blog]
+tags:
+  - Hexo
+  - Blog
+  - ENF
+categories:
+  - Hexo
+  - Blog
+subtitle: >-
+  Customizing a Hexo blog by applying blog and theme-level settings, and
+  installing some useful Hexo plugins.
+date: 2020-04-24 17:24:29
 ---
+
 Step-By-Step Creating a Hexo blog post series:
 
 1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/)

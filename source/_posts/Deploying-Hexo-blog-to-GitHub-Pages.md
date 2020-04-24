@@ -1,9 +1,18 @@
 ---
 title: Deploying Hexo blog to GitHub Pages
-subtitle: Deploying Hexo blog by simply pushing code to the remote repository. Using the GitHub Pages option to serve a website from the "docs" folder.
-tags: [Hexo, Blog, ENF]
-categories: [Hexo, Blog]
+tags:
+  - Hexo
+  - Blog
+  - ENF
+categories:
+  - Hexo
+  - Blog
+subtitle: >-
+  Deploying Hexo blog by simply pushing code to the remote repository. Using the
+  GitHub Pages option to serve a website from the "docs" folder.
+date: 2020-04-24 17:25:06
 ---
+
 Step-By-Step Creating a Hexo blog post series:
 
 1. [Installing Hexo blog and adding a new theme](https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/)
