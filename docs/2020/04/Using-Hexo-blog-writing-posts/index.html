@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Step-By-Step Creating a Hexo blog post series:
+
+Installing Hexo blog and adding a new theme
+Customizing a Hexo blog
+Using Hexo blog - writing posts
+De"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Vladimir Vozar"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Using Hexo blog - writing posts"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Step-By-Step Creating a Hexo blog post series:
+
+Installing Hexo blog and adding a new theme
+Customizing a Hexo blog
+Using Hexo blog - writing posts
+De"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Code Insights"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Using Hexo blog - writing posts - Code Insights</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/img/favicon.ico"/>
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Vladimir Vozar</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/banner2.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Using Hexo blog - writing posts</h1>
+                    
+                    <h2 class="post-subheading">
+                        Let's see the differences between pages, drafts, and posts in Hexo. We will write our first post and generate website content.
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-04-24
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Hexo/">#Hexo</a> <a href="/tags/Blog/">#Blog</a> <a href="/tags/ENF/">#ENF</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Hexo/">Hexo</a>/ <a href="/categories/Hexo/Blog/">Blog</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Step-By-Step Creating a Hexo blog post series:</p>
+<ol>
+<li><a href="https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/">Installing Hexo blog and adding a new theme</a></li>
+<li><a href="https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/">Customizing a Hexo blog</a></li>
+<li><strong>Using Hexo blog - writing posts</strong></li>
+<li><a href="https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/">Deploying Hexo blog to GitHub Pages</a></li>
+</ol>
+<br/>
+
+<blockquote>
+<p>This article is also available on <a href="https://exceptionnotfound.net/using-hexo-blog-writing-posts/" target="_blank" rel="noopener">Exception Not Found</a> blog.</p>
+</blockquote>
+<p>The <a href="https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/">previous post</a> has described some useful blog customizations. By making these changes, we have configured our blog to suit our needs. We have also installed a <em>hexo-browsersync</em> plugin, which is helpful while writing posts with Hexo.</p>
+<blockquote>
+<p>A finished blog that we are building in this series is available <a href="https://vladimirvozar.github.io/hexo-blog-create/" target="_blank" rel="noopener">online</a>, served on a GitHub Pages server. The source code can be seen on <a href="https://github.com/vladimirvozar/hexo-blog-create" target="_blank" rel="noopener">this GitHub repository</a>.</p>
+</blockquote>
+<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>In the previous post, we have configured our blog, but we still need to add pages for <em>tags</em> and <em>categories</em>. After that, the next step is to start using our blog. We will go through the process of creating a new <em>post</em> and <em>draft</em> pages, and explain the workflow for using these two types of page layouts together. We will see where these pages are being placed when created, and what happens in our blog file structure when we generate and deploy our blog.</p>
+<h3 id="Generating-tags-and-categories-pages"><a href="#Generating-tags-and-categories-pages" class="headerlink" title="Generating tags and categories pages"></a>Generating <em>tags</em> and <em>categories</em> pages</h3><p>Adding <em>tags</em> and <em>categories</em> pages is documented in the <a href="https://github.com/klugjo/hexo-theme-clean-blog#tags-page" target="_blank" rel="noopener">README file</a> of our theme.<br>All we need to do is to run <code>hexo new page &quot;tags&quot;</code> and <code>hexo new page &quot;categories&quot;</code> commands.</p>
+<p>These commands will create two files:</p>
+<ul>
+<li><em>\source\categories\index.md</em></li>
+<li><em>\source\tags\index.md</em></li>
+</ul>
+<p>Edit the front matter of newly created pages and set appropriate page type.</p>
+<p>For <em>Tags</em>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: All tags</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure>
+
+<p>For <em>Categories</em>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title: All categories</span><br><span class="line">type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a href="https://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">Front-matter</a> is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes when written in YAML or three semicolons when written in JSON.</p>
+</blockquote>
+<p>Run <code>hexo server</code> again, and we can check our new pages by going to the <em>Tags</em> and <em>Categories</em> links in the menu.</p>
+<h3 id="Generating-public-folder"><a href="#Generating-public-folder" class="headerlink" title="Generating public folder"></a>Generating <em>public</em> folder</h3><p>If you open file explorer of our blog, there should be a files and folders structure like on the following screenshot:</p>
+<img src="/2020/04/Using-Hexo-blog-writing-posts/blog_folder_without_public.png" class="" title="Hexo folder structure">
+
+<p>Up until now, we haven’t created any new posts (or drafts) yet. But we do already have one post - a <a href="https://vladimirvozar.github.io/hexo-blog-create/2020/03/hello-world/" target="_blank" rel="noopener"><em>Hello world</em></a> post that initially came with Hexo blog creation. This post, as well as any new one that we are going to create, is placed under <em>\source_posts</em> folder. But, as you can see, this is only the <em>.md</em> (Markdown) file of the post article. No styles, no images or any other HTML files here (not even an <em>index.html</em> file).</p>
+<p>So, the next thing we need to do is to <em>generate</em> the content that will be our actual site.<br>To generate our blog site, Hexo has a command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>Run this command from the bash terminal, and we will see log informations about which files were generated with this command.<br>Now, let’s open our file explorer again, and notice the new folder, called <em>public</em> inside the blog root folder. This is the folder that holds the whole content of our blog. </p>
+<p>By default, Hexo generates a website content into a <em>public</em> folder. There is a <em>public_dir</em> setting in <em>_config.yml</em> file where this configuration is set. It can be set to some other folder, and we will explain a scenario (in the next post) why would we want to publish to some other folder.</p>
+<h3 id="Writing-Posts-vs-Drafts"><a href="#Writing-Posts-vs-Drafts" class="headerlink" title="Writing - Posts vs Drafts"></a>Writing - Posts vs Drafts</h3><p>There are three default page layouts in Hexo: post, page, and draft. Files created by each of them are saved to a different path (<em>source/_posts</em>, <em>source/_drafts</em> and <em>source/_pages</em>). We have already used <em>page</em> layout for creating our <em>tags</em> and <em>categories</em> pages. <em>Post</em> and <em>draft</em> layouts are two layouts we are going to use for post creation.</p>
+<p>Drafts are the same as posts. More specifically, drafts are just unpublished posts that we are still <em>working on</em>. Those are just files that contain the article of our future post in the Markdown format.</p>
+<p><em>NOTE: <a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="noopener">Markdown</a> is a way to style text on the web.</em></p>
+<p>Common workflow to follow when writing posts would be:</p>
+<ul>
+<li>create a new <em>draft</em> page</li>
+<li>write your article content (Markdown content)</li>
+<li>when done with writing, publish a <em>draft</em> (make it a <em>post</em>)</li>
+<li>generate website/blog content</li>
+</ul>
+<p>If you remember, in the previous article, when we were configuring blog-level settings, we have set <em>default_layout</em> to have a value of <em>draft</em>.<br>This means, that by executing <code>hexo new name-of-the-post</code> command, we would get a new draft page generated.</p>
+<p>Detailed instructions about writing new posts can be found in <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">official Hexo documentation</a>.</p>
+<p>So, let’s see the above steps in action. </p>
+<p>Create a new <em>draft</em> page by running:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;First Hexo post&quot;</span><br></pre></td></tr></table></figure>
+
+<p>This command creates a new draft page, a markdown file, inside the <em>source/_drafts</em> folder. Also, a new asset folder with the same name is created.<br>This folder is meant to hold assets (images, additional files …) referenced from our post/draft article.</p>
+<p>Now, place following markdown content inside the <em>First-Hexo-post.md</em> file:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Hi there.</span><br><span class="line">This is our first **Hexo** generated post.</span><br><span class="line"></span><br><span class="line">Example of an image inside the post content:</span><br><span class="line">&#123;% asset_img &quot;example.png&quot; &quot;This is an example image&quot; %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>I have placed one image in the <em>source/_drafts/Hello</em> folder and referenced it from the draft file like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img &quot;example.png&quot; &quot;This is an example image&quot; %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>To see the changes that we have made in our draft post, we need to start Hexo server with <code>hexo server --draft</code> command.<br>Without the <em>–draft</em> part, we would not be able to see the drafts on our blog (only posts are visible).</p>
+<p>Let’s say we have our post article ready. The next step is to move our draft content from <em>source/_drafts</em> to <em>source/_posts</em> folder.<br>This is automatically achieved by running:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish &quot;First Hexo post&quot;</span><br></pre></td></tr></table></figure>
+
+<p>In short, that would be some common scenario for creating new posts.</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>In this part we have:</p>
+<ul>
+<li>created <em>tags</em> and <em>categories</em> scaffold pages</li>
+<li>generated <em>public</em> folder</li>
+<li>explained post creating workflow by first using drafts</li>
+</ul>
+<p>The <a href="https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/">last part</a> of this series will explain how to organize and configure our blog for easy deploying, and we will deploy our blog to GitHub pages.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/vladimir_vozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/vladimirvozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/vladimir-vozar-64093676/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:vozarvladimir@gmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 Vladimir Vozar<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'www-codeinsights-net';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>

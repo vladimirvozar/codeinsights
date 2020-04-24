@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Step-By-Step Creating a Hexo blog post series:
+
+Installing Hexo blog and adding a new theme
+Customizing a Hexo blog
+Using Hexo blog - writing posts
+De"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Vladimir Vozar"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Installing Hexo blog and adding a new theme"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Step-By-Step Creating a Hexo blog post series:
+
+Installing Hexo blog and adding a new theme
+Customizing a Hexo blog
+Using Hexo blog - writing posts
+De"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Code Insights"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Installing Hexo blog and adding a new theme - Code Insights</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/img/favicon.ico"/>
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Vladimir Vozar</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/banner2.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Installing Hexo blog and adding a new theme</h1>
+                    
+                    <h2 class="post-subheading">
+                        Generating a static blog website with Hexo Framework. Simple Hexo Framework setup, as well as installation of new Hexo theme.
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-04-24
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Hexo/">#Hexo</a> <a href="/tags/Blog/">#Blog</a> <a href="/tags/ENF/">#ENF</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Hexo/">Hexo</a>/ <a href="/categories/Hexo/Blog/">Blog</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Step-By-Step Creating a Hexo blog post series:</p>
+<ol>
+<li><strong>Installing Hexo blog and adding a new theme</strong></li>
+<li><a href="https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/">Customizing a Hexo blog</a></li>
+<li><a href="https://www.codeinsights.net/2020/03/Using-Hexo-blog-writing-posts/Using-Hexo-blog-writing-posts/">Using Hexo blog - writing posts</a></li>
+<li><a href="https://www.codeinsights.net/2020/03/Deploying-Hexo-blog-to-GitHub-Pages/">Deploying Hexo blog to GitHub Pages</a></li>
+</ol>
+<br/>
+
+<blockquote>
+<p>This article is also available on <a href="https://exceptionnotfound.net/installing-hexo-blog-and-adding-a-new-theme/" target="_blank" rel="noopener">Exception Not Found</a> blog.</p>
+</blockquote>
+<p>Hexo Framework is a simple static site generator, mainly intended to be used for generating blogs. This is the first part of the <em>Creating a Hexo blog post series</em>. In the first post, we will go through a short overview of static site generators, and we will install the Hexo framework and the theme of our choice. The second post of this series will describe some useful blog customizations, while in the third post we will explain how to use our Hexo generated blog for writing posts. The last part will explain one possible way of deploying our blog and an easy way to host our blog on a GitHub Pages server, directly from the GitHub repository.</p>
+<blockquote>
+<p>A finished blog that we are building in this series is available <a href="https://vladimirvozar.github.io/hexo-blog-create/" target="_blank" rel="noopener">online</a>, served on a GitHub Pages server. The source code can be seen on <a href="https://github.com/vladimirvozar/hexo-blog-create" target="_blank" rel="noopener">this GitHub repository</a>.</p>
+</blockquote>
+<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>There are numerous articles, videos, and tutorials on this subject - creating a Hexo blog. Most of them explain using <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> in just running several simple <em>bash</em> commands one after the other. And that is all that’s needed - using Hexo Framework is that simple. Because of this simple Hexo usage, we don’t need to worry about all the details happening in the background of this generating process. </p>
+<p>Anyway, the main intention of this post series is to cover step by step process of creating a blog with the Hexo framework. We’ll try to explain what each of Hexo commands is doing so that anyone can understand all the actions that are happening in the background when we create a static website with Hexo. The goal here is that for a reader who is new to Hexo, by following instructions, in the end, should understand its blog structure, and have a fully working Hexo blog hosted with the <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> directly from <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> repository. Let’s start.</p>
+<h3 id="Static-site-generators"><a href="#Static-site-generators" class="headerlink" title="Static site generators"></a>Static site generators</h3><blockquote>
+<p>Static websites are popular because they are super-efficient, extremely fast and usually free to host. Blogs, resumes, marketing websites, landing pages, and documentation are all good candidates for static websites.</p>
+</blockquote>
+<p>The previous sentence is a citation taken from <a href="http://nilclass.com/courses/what-is-a-static-website/#1" target="_blank" rel="noopener">this interactive presentation-style tutorial website</a>, where you can see a nice animation that visually presents the differences between static and dynamic websites.</p>
+<p>In short, static site generators are used to generate static HTML files that will be served by the web server. With static content, there is no backend service processing, no accessing a database, no private data. Since this kind of website is stateless in nature, it can be scaled to many servers with ease. That’s why the whole process is very secure, page loading is very fast and static content is easy for caching. This way we get the fastest website serving that is possible.</p>
+<p><em>NOTE: I am working on Windows OS, and all commands will be executed in Git Bash for Windows. It should be analog in case you are working on different OS.</em></p>
+<h3 id="Installing-Hexo"><a href="#Installing-Hexo" class="headerlink" title="Installing Hexo"></a>Installing Hexo</h3><p>Hexo is only one of many open-source static site generators <a href="https://www.staticgen.com/" target="_blank" rel="noopener">out there</a>. It is mostly used as a blogging framework, but it can also be used for other purposes. Often, Hexo is used for maintaining project documentation. It is built with Node.js, and has a deploy integration for the <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>. So, for installing Hexo, we need to have <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node</a> (which includes <strong>npm</strong>) and <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> installed.</p>
+<p>Assuming we have installed <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node</a> and <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>, we can install Hexo Framework (<em>‘hexo-cli’</em> - Hexo Command Line Interface) by running following line in a command terminal:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>Wait for the installation process to finish, and if everything went well, we can confirm Hexo is installed properly by asking about Hexo version info:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo --version</span><br></pre></td></tr></table></figure>
+
+<p>We should get a list of version informations displayed.</p>
+<p>Now, lets create a new folder where our blog files will reside. We will set this folder to be a <em>GitHub</em> repository later.<br>In a command prompt, go to this newly created blog folder, and to initialize an empty blog, type the following command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>All of the Hexo commands that we will be explaining need to be executed from this same folder (our blog root folder).</p>
+<p>When running <code>hexo init</code> command, the Hexo framework downloads all the files and folders needed for an initial blog structure.<br>Actually, Hexo is downloading the content of the <a href="https://github.com/hexojs/hexo-starter" target="_blank" rel="noopener">hexo-starter</a> repository.<br>It also downloads the default theme, that comes with the initial Hexo blog (<em>landscape</em> theme).<br>After it’s done, we should see the following files and folders in your blog folder:</p>
+<img src="/2020/04/Installing-Hexo-blog-and-adding-a-new-theme/hexo_initial.png" class="" title="Hexo folder structure">
+
+
+<h3 id="Serving-Hexo-Blog"><a href="#Serving-Hexo-Blog" class="headerlink" title="Serving Hexo Blog"></a>Serving Hexo Blog</h3><p>At this moment we already have an empty blog created. To see this newly generated blog, run Hexo command for serving blog locally:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>Check how our blog looks like by going to <a href="http://localhost:4000" target="_blank" rel="noopener">localhost:4000</a> address in the browser. By default, the Hexo blog comes with the theme called <em><a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="noopener">landscape</a></em>. </p>
+<p>The theme defines <em>the look and feel</em> of our site. We can have more than one theme installed, but we need to set which theme is active in the <em>_config.yml</em> file, that is in the root(blog) folder. Every theme we have installed is placed in a separate folder, underneath the <em>‘themes’</em> folder. </p>
+<p><em>NOTE: To make it clear, there are two _config.yml files:</em><br><em>- _config.yml under the root(blog) folder -&gt; contains blog-level configurations</em>, and<br><em>- _config.yml under the ‘themes/name_of_the_theme’ folder -&gt; contains additional, theme related configurations</em></p>
+<p>Hexo has a great community and there are many different Hexo themes that we can check and try on <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">Hexo themes</a> site. In our posts, we will be installing and configuring <em><a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">clean-blog</a></em> theme. I have chosen this theme because it is simple to use, but still contains the main features needed for a typical blog.</p>
+<h3 id="Installing-a-new-theme"><a href="#Installing-a-new-theme" class="headerlink" title="Installing a new theme"></a>Installing a new theme</h3><p>If our local server is still running, press ‘CTRL+C’ in command prompt for stopping it. We are going to install <em><a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">clean-blog</a></em> theme, and delete default <em>landscape</em> theme. If we open <em>‘themes’</em> folder in Windows Explorer, we will see <em>landscape</em> folder as the only folder there. For installing <em><a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">clean-blog</a></em> theme, enter:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/klugjo/hexo-theme-clean-blog.git themes/clean-blog</span><br></pre></td></tr></table></figure>
+
+<p>After theme installation is done, besides the <em>‘landscape’</em> folder, there should also be a <em>‘clean-blog’</em> folder present inside the <em>‘themes’</em> folder. Delete the <em>‘landscape’</em> folder(theme).</p>
+<p>By running the previous command, we have cloned a new repository from the <em>GitHub</em>. This means, that there is <em>‘.git’</em> hidden folder inside the <em>‘clean-blog’</em> folder. To be able to see this folder in your file explorer, make sure you have an option for hidden items set to be visible. Since we are going to have <em>‘.git’</em> folder in the root of our blog folder structure, and we will not be contributing to <em><a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">clean-blog</a></em> theme development, delete the <em>‘.git’</em> folder that is inside the <em>‘clean-blog’</em> folder.</p>
+<p>At this moment, we have deleted the default theme, installed a new theme, but we still need one more step to activate the newly installed theme. In editor of your choice (<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>, <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a>, <a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime</a> …) open our blog folder, then open <em>_config.yml</em> that is under our root(blog) folder. </p>
+<p>Find the line for <em>‘theme’</em> setting, and set the <em>‘theme’</em> to:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: clean-blog</span><br></pre></td></tr></table></figure>
+
+<p>Again, start Hexo server locally (<code>hexo server</code>), and check how our site looks now, with the new theme applied: <a href="http://localhost:4000" target="_blank" rel="noopener">localhost:4000</a>.</p>
+<p>It is a good time to put the content we currently have under source control. I will assume you are familiar with initializing a new local and remote git repositories, connecting them and making commits.<br>There is a step by step process of adding a local repository to GitHub described on <a href="https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line" target="_blank" rel="noopener">the official GitHub Help page</a>.</p>
+<p><em>NOTE: I’ll be making git commits after every reasonable change we make in our blog creation process. This way you’ll be able to review our step by step changes in the commit history of the repository.</em></p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>To sum up, these are the steps we went through in this part:</p>
+<ul>
+<li>installed required software: <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node</a> and <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+<li>installed <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo Framework</a> </li>
+<li>generated initial Hexo blog</li>
+<li>served our Hexo blog locally</li>
+<li>installed and activated (<em><a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">clean-blog</a></em>) theme</li>
+</ul>
+<p>In the <a href="https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/">second part</a> of this post series, we will be installing some useful Hexo plugins, applying blog and theme-level configurations, we will add personal informations to our blog and in the end we should have a fully configured blog that is ready for use.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/vladimir_vozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/vladimirvozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/vladimir-vozar-64093676/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:vozarvladimir@gmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 Vladimir Vozar<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'www-codeinsights-net';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>

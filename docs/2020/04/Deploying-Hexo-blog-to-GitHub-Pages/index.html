@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Step-By-Step Creating a Hexo blog post series:
+
+Installing Hexo blog and adding a new theme
+Customizing a Hexo blog
+Using Hexo blog - writing posts
+De"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Vladimir Vozar"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Deploying Hexo blog to GitHub Pages"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Step-By-Step Creating a Hexo blog post series:
+
+Installing Hexo blog and adding a new theme
+Customizing a Hexo blog
+Using Hexo blog - writing posts
+De"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Code Insights"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Deploying Hexo blog to GitHub Pages - Code Insights</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/img/favicon.ico"/>
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Vladimir Vozar</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/banner2.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Deploying Hexo blog to GitHub Pages</h1>
+                    
+                    <h2 class="post-subheading">
+                        Deploying Hexo blog by simply pushing code to the remote repository. Using the GitHub Pages option to serve a website from the "docs" folder.
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-04-24
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Hexo/">#Hexo</a> <a href="/tags/Blog/">#Blog</a> <a href="/tags/ENF/">#ENF</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Hexo/">Hexo</a>/ <a href="/categories/Hexo/Blog/">Blog</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Step-By-Step Creating a Hexo blog post series:</p>
+<ol>
+<li><a href="https://www.codeinsights.net/2020/03/Installing-Hexo-blog-and-adding-a-new-theme/">Installing Hexo blog and adding a new theme</a></li>
+<li><a href="https://www.codeinsights.net/2020/03/Customizing-Hexo-blog/">Customizing a Hexo blog</a></li>
+<li><a href="https://www.codeinsights.net/2020/03/Using-Hexo-blog-writing-posts/">Using Hexo blog - writing posts</a></li>
+<li><strong>Deploying Hexo blog to GitHub Pages</strong></li>
+</ol>
+<br/>
+
+<blockquote>
+<p>This article is also available on <a href="https://exceptionnotfound.net/deploying-hexo-blog-to-github-pages/" target="_blank" rel="noopener">Exception Not Found</a> blog.</p>
+</blockquote>
+<p>By following instructions in the previous three articles in our mini-series, we should have a working blog that is ready for use. And we have also created our first post with Hexo. Our blog is now configured, but only for local usage. In this part, we will add some more configurations that will allow easy deployment of our blog.</p>
+<blockquote>
+<p>A finished blog that we are building in this series is available <a href="https://vladimirvozar.github.io/hexo-blog-create/" target="_blank" rel="noopener">online</a>, served on a GitHub Pages server. The source code can be seen on <a href="https://github.com/vladimirvozar/hexo-blog-create" target="_blank" rel="noopener">this GitHub repository</a>.</p>
+</blockquote>
+<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>The last part of our Hexo series will be about deploying our blog to GitHub Pages. There are several possible approaches to this subject. Our goal is to have blog files under source control on a GitHub repository and being served on a GitHub Pages server.</p>
+<h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p>From the GitHub Pages documentation:</p>
+<blockquote>
+<p>GitHub Pages is an easy hosting solution for websites with HTML, CSS, and JavaScript files. You can create two types of sites on GitHub Pages:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>User Pages - if you’re hosting a personal website or an index of your projects, or something that represents you as a whole. You can only have one user page per account. The URL for this page will be <a href="http://yourusername.github.io/" target="_blank" rel="noopener">http://yourusername.github.io/</a>.</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>Project Pages - if you’re hosting one project, of which you have many. You can create multiple project pages per account. The URL for this page will be <a href="http://yourusername.github.io/projectname/" target="_blank" rel="noopener">http://yourusername.github.io/projectname/</a>.</li>
+</ol>
+</blockquote>
+<ul>
+<li>If we want to go with <em>User Pages</em>, the repository where our generated website content will be would have to be named <em>yourusername.github.io</em>. And it will have to be on the <em>master</em> branch. </li>
+<li>Alternatively, if we go with <em>Project Pages</em>, our website content can reside in any repository (usually named after our blog), but it needs to be on a <em>gh-pages</em> branch. </li>
+<li>Beside two approaches just mentioned, there is a third option - GitHub Pages can serve website content from a <em>docs</em> subfolder of our repository (on the <em>master</em> branch). In my opinion, this is the simplest way to deploy our blog, and we will go with this option.</li>
+</ul>
+<p>As we can see, GitHub pages have specific rules. More details about configuring a publishing source for our GitHub Pages site can be found on <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank" rel="noopener">official GitHub Pages documentation</a>.</p>
+<h3 id="Serving-blog-from-docs-folder"><a href="#Serving-blog-from-docs-folder" class="headerlink" title="Serving blog from /docs folder"></a>Serving blog from <em>/docs</em> folder</h3><p>Hexo generates a website content into a <em>public</em> folder. And we want our generated content to be in the <em>docs</em> folder.<br>Before we change our blog publishing folder, execute the <code>hexo clean command</code>. This command deletes the publishing folder. To create or update it again, run <code>hexo generate</code>.</p>
+<p>As we said earlier, we want our website content to be served from <em>docs</em> subfolder of our repository (on the master branch). To achieve this scenario, there are a couple of things we have to configure in the blog-level _config.yml file:</p>
+<ul>
+<li>set the <em>public_dir: docs</em></li>
+<li>set the <em>url: <a href="http://yourusername.github.io" target="_blank" rel="noopener">http://yourusername.github.io</a></em></li>
+<li>set the <em>root: /projectname</em></li>
+</ul>
+<p>In the theme-level <em>_config.yml</em> file:</p>
+<ul>
+<li>set the <em>index_cover: /projectname/img/home-bg.jpg</em></li>
+<li>set the <em>favicon: /projectname/img/favicon.ico</em></li>
+</ul>
+<p>In the above settings, <em>index_cover</em> and <em>favicon</em> are needed, because when deploying to GitHub Pages, the base address is <em><a href="http://yourusername.github.io" target="_blank" rel="noopener">http://yourusername.github.io</a></em>, not the <em><a href="http://yourusername.github.io/projectname/" target="_blank" rel="noopener">http://yourusername.github.io/projectname/</a></em>.</p>
+<ul>
+<li>run <code>hexo generate</code> to generate our <em>publishing</em> folder with our blog content</li>
+<li>push the repository to GitHub</li>
+<li>in the GitHub repository, go to <em>Settings</em> tab, and scroll down to <em>GitHub Pages</em> section</li>
+<li>as the <em>Source</em>, select the option: <em>master branch /docs folder</em></li>
+</ul>
+<h3 id="GitHub-repository-settings"><a href="#GitHub-repository-settings" class="headerlink" title="GitHub repository settings"></a>GitHub repository settings</h3><p>Every GitHub repository under its <em>Settings</em> has a GitHub Pages section that contains several configurations. As the source of our blog, we have already chosen the <em>master branch /docs folder</em> option.</p>
+<p>Selecting a source option will not make any changes to our source code. It just instructs the GitHub Pages server where to look for our blog content.<br>But, selecting a Jekyll theme, or setting up a custom domain are two actions that do make a change to our blog source code. </p>
+<p>When I’ve tried for the first time to see the deployed blog (served on GitHub Pages), I was getting <em>404 Error Page</em>. Apparently, the selection of the Jekyll theme was mandatory. Not sure why this option would be mandatory, but in case you are facing the same situation, here is the thing to keep in mind:</p>
+<p>When you select some Jekyll theme, GitHub will automatically create a commit in which a file named <em>_config.yml</em> is added to a <em>docs</em> folder.<br>The content of this file would be (e.g. for a Jekyll <em>Cayman</em> theme selected):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: jekyll-theme-cayman</span><br></pre></td></tr></table></figure>
+
+<p>After making the above-mentioned changes, our blog should be configured, and we should be able to see it up and running on <em><a href="http://yourusername.github.io/projectname/" target="_blank" rel="noopener">http://yourusername.github.io/projectname/</a></em>.</p>
+<p>This way we have both our blog source code as well as generated blog content (<em>docs</em> folder) in one GitHub repository, on one (<em>master</em>) branch. </p>
+<h3 id="A-CNAME-file"><a href="#A-CNAME-file" class="headerlink" title="A CNAME file"></a>A CNAME file</h3><p>GitHub Pages supports custom domains, so the websites hosted by GitHub Pages can be accessed via DNS names. Configuring <em>A</em> and <em>CNAME</em> records depend on your DNS provider.</p>
+<blockquote>
+<p><em>CNAME</em> - uppercase file name without a file extension. <em>CNAME</em> stands for Canonical Name, and a <em>CNAME</em> record must always point to another domain name, never directly to an IP address</p>
+</blockquote>
+<p>If we want a custom domain assigned to our blog, we need to have a <em>CNAME</em> file inside our <em>publishing(docs)</em> folder. The contents of the <em>CNAME</em> file should be the domain of our website, e.g. <em><a href="http://www.yourwebsite.com" target="_blank" rel="noopener">www.yourwebsite.com</a></em>.</p>
+<p>If we enter our custom domain in repository settings, GitHub commits a <em>CNAME</em> file to a docs folder.</p>
+<p>When we update a <em>docs</em> folder, the <em>CNAME</em> file will be deleted. So, create a <em>CNAME</em> file in the source folder of our blog, and regenerating <em>docs</em> folder will pick it up, and place it in the <em>docs</em> folder.</p>
+<p>When we set a custom domain on a GitHub repository, it may take some time before our domain gets connected with the repository. After that, we probably will need to update some of the blog settings: paths, references to possible background images, headers, favicon …</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>This post covered the following tasks:</p>
+<ul>
+<li>configuring blog deployment from <em>master branch /docs</em> folder</li>
+<li>explaining GitHub Pages settings of GitHub repository</li>
+<li>avoiding possible issues with GitHub Pages Theme and/or custom domain</li>
+</ul>
+<p>Hexo Framework is simple to use, but if we just take it for granted, we will hit some walls. I hope we have clarified some of the possible Hexo issues, and I hope that you found some valuable information in this series.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/vladimir_vozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/vladimirvozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/vladimir-vozar-64093676/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:vozarvladimir@gmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 Vladimir Vozar<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'www-codeinsights-net';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
