@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Overview of API Versioning in ASP.NET Core 3.0+
+This article is also available on Exception Not Found blog
+
+Very often, API versioning is something th"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Vladimir Vozar"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Overview of API Versioning in ASP.NET Core 3.0+"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Overview of API Versioning in ASP.NET Core 3.0+
+This article is also available on Exception Not Found blog
+
+Very often, API versioning is something th"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Code Insights"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://www.codeinsights.net/img/banner2.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Overview of API Versioning in ASP.NET Core 3.0+ - Code Insights</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/img/favicon.ico"/>
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Vladimir Vozar</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/banner2.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Overview of API Versioning in ASP.NET Core 3.0+</h1>
+                    
+                    <h2 class="post-subheading">
+                        Describing the most common API versioning methods using Microsoft.AspNetCore.Mvc.Versioning package functionality
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-05-28
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/ENF/">#ENF</a> <a href="/tags/Versioning/">#Versioning</a> <a href="/tags/WEB-API/">#WEB-API</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/WEB-API/">WEB-API</a>/ <a href="/categories/WEB-API/ASP-NET-Core/">ASP.NET Core</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="Overview-of-API-Versioning-in-ASP-NET-Core-3-0"><a href="#Overview-of-API-Versioning-in-ASP-NET-Core-3-0" class="headerlink" title="Overview of API Versioning in ASP.NET Core 3.0+"></a>Overview of API Versioning in ASP.NET Core 3.0+</h3><blockquote>
+<p>This article is also available on <a href="https://exceptionnotfound.net/overview-of-api-versioning-in-asp-net-core-3-0/" target="_blank" rel="noopener">Exception Not Found blog</a></p>
+</blockquote>
+<p>Very often, API versioning is something that is being thought of only when there is a need for changing our API. However, we shouldn’t wait until we need such a thing before we implement it. Rather, we should have a versioning strategy, that we will follow while building our API endpoints, right from the beginning of API development.</p>
+<p>When we expose our API for use, it is assumed that we have clearly defined the contracts and that the consumers of our API can rely on these contracts. If we make some changes to our API contracts, these should be exposed as a new version of our API. This new version does not mean a new code base of the API. It should be the same code base that supports different versions of an API.</p>
+<img src="/2020/05/Overview-of-API-Versioning-in-ASP-NET-Core-3-0/reindeers-on-the-road.jpg" class="" title="One code base - multiple versions">
+
+<p>There are many approaches we can use to implement API versioning. In general, there isn’t a good or a bad way when talking about API versioning. Which approach to choose depends on who is using our API, on our overall product development situation (are we starting a new project, or do we need to incorporate versioning to a mature, production API), and on how detailed we want to be with API versioning. Find an option that best suits your needs, and stick with it when building your API endpoints.</p>
+<h3 id="Microsoft-AspNetCore-Mvc-Versioning"><a href="#Microsoft-AspNetCore-Mvc-Versioning" class="headerlink" title="Microsoft.AspNetCore.Mvc.Versioning"></a>Microsoft.AspNetCore.Mvc.Versioning</h3><p>Microsoft has a package that offers a set of libraries which adds service API versioning in ASP.NET Core: <a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Versioning" target="_blank" rel="noopener">Microsoft.AspNetCore.Mvc.Versioning</a></p>
+<p>In this post, we will describe the most common use cases. For detailed rules and guidelines on API versioning, take a look at <a href="https://github.com/microsoft/aspnet-api-versioning/wiki" target="_blank" rel="noopener">Microsoft’s official wiki pages</a> and <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning" target="_blank" rel="noopener">Microsoft REST API Guidelines for versioning</a>.</p>
+<blockquote>
+<p>If you are familiar with basic versioning concepts, or just want to go straight to the code, I have created a simple example that covers all of the API versioning methods described in this post. This project can be downloaded/cloned from a <a href="https://github.com/vladimirvozar/ApiVersioning" target="_blank" rel="noopener">GitHub repository</a>.</p>
+</blockquote>
+<p>The first step with API versioning is to install Microsoft’s versioning package. From package manager console run following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Install-Package Microsoft.AspNetCore.Mvc.Versioning</span><br></pre></td></tr></table></figure>
+<p>API versioning is achieved by setting versioning configuration in the <code>ConfigureServices</code> method of the <code>Startup.cs</code> file, and by annotating controllers and actions with appropriate attributes.</p>
+<p>To activate API versioning, simply add <code>services.AddApiVersioning();</code> to the <code>ConfigureServices</code> method. With this line added, we have activated default API versioning settings, and by default, when calling our API, our clients MUST specify a version in their requests. Otherwise, our API will respond with a <em>BadRequest</em> and <em>ApiVersionUnspecified</em> error. It is a pretty strict rule to require explicit stating of an API version in every request. To make life a bit easier for the users of our API, we need to set a default API version to be used when it is not explicitly stated in the request. </p>
+<p>So, a more common versioning configuration would be:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning(options =&gt; &#123;</span><br><span class="line">		options.DefaultApiVersion = <span class="keyword">new</span> ApiVersion(<span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">		options.AssumeDefaultVersionWhenUnspecified = <span class="literal">true</span>;</span><br><span class="line">		options.ReportApiVersions = <span class="literal">true</span>;</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
+<p>Let us explain what each of the above versioning settings implies:</p>
+<ul>
+<li><p><code>options.DefaultApiVersion = new ApiVersion(1, 0);</code> - This setting is not mandatory, because by default it is assumed that the initial version is set to 1.0. But, it is a good practice to state it explicitly. With <code>DefaultApiVersion</code> being set, all controllers that do not have an API version attribute (<code>[ApiVersion(&quot;1.0&quot;)]</code>) applied on them, will implicitly bound to this default API version. However, for easier understanding, it is recommended to explicitly apply API version attributes on our controllers.</p>
+</li>
+<li><p><code>options.AssumeDefaultVersionWhenUnspecified = true;</code> - <code>DefaultApiVersion</code> just tells us the number of default API version, but we still need to set <code>AssumeDefaultVersionWhenUnspecified</code> to true for our default API version to be <em>activated</em>. Without this setting, any clients that do not specify an API version in their requests would get a <em>BadRequest</em> response with an <em>ApiVersionUnspecified</em> error stating that <em>An API version is required, but was not specified</em>.</p>
+</li>
+<li><p><code>options.ReportApiVersions = true;</code> - Reporting API versions is disabled by default. With enabling this option, responses from our API endpoints will carry a header telling our clients which versions are supported or deprecated (<code>api-supported-versions: 1.1, 2.0, api-deprecated-versions: 1.0</code>).</p>
+</li>
+</ul>
+<h3 id="Types-of-API-versioning"><a href="#Types-of-API-versioning" class="headerlink" title="Types of API versioning"></a>Types of API versioning</h3><img src="/2020/05/Overview-of-API-Versioning-in-ASP-NET-Core-3-0/four-raindeers.jpg" class="" title="Four different API versioning methods">
+
+<p>There are four out-of-the-box supported approaches for versioning a service:</p>
+<ol>
+<li>by query string parameter</li>
+<li>by HTTP header</li>
+<li>by URL path segment</li>
+<li>by media type parameter</li>
+</ol>
+<p>The default method is to use a query string parameter named ‘<strong>api-version</strong>‘. We can also combine API versioning methods or define our custom method of API versioning.</p>
+<h3 id="API-Version-Reader"><a href="#API-Version-Reader" class="headerlink" title="API Version Reader"></a>API Version Reader</h3><p>API Version Reader defines how an API version is read from the HTTP request. If not explicitly configured, the default setting is that our API version will be a query string parameter named ‘<strong>api-version</strong>‘ (example: <em>../users?api-version=2.0</em> ). Another, probably more popular option is to store the API version in the HTTP header. We have also the possibility of having an API version both in a query string as well as in an HTTP header.</p>
+<p>The next common versioning method is via the URL path. Version information will be one segment in the URL path of the endpoint. This means that our customers are always explicitly asking for a certain version (by going to that specific URL). In many cases, this is not appropriate, because it is not possible to have a default API version for a URL path segment, and there is no way to configure implicit matching to a certain version.</p>
+<p>So, depending on which option we want, our configuration would be:</p>
+<ol>
+<li><p>for query string parameter</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning(options =&gt; </span><br><span class="line">	options.ApiVersionReader = <span class="keyword">new</span> QueryStringApiVersionReader(<span class="string">"v"</span>));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>for HTTP header</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning(options =&gt; </span><br><span class="line">	options.ApiVersionReader = <span class="keyword">new</span> HeaderApiVersionReader(<span class="string">"api-version"</span>));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>API Version Reader Composition</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning(options =&gt; &#123;</span><br><span class="line">	options.ApiVersionReader = ApiVersionReader.Combine(</span><br><span class="line">					<span class="keyword">new</span> QueryStringApiVersionReader(<span class="string">"v"</span>),</span><br><span class="line">					<span class="keyword">new</span> HeaderApiVersionReader(<span class="string">"v"</span>));&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>versioning via the URL Path</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning(options =&gt; options.ApiVersionReader = </span><br><span class="line">					<span class="keyword">new</span> UrlSegmentApiVersionReader());</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>We can change the parameter name that represents the version (like in the query string method above, where we have used the letter ‘<strong>v</strong>‘ instead of default ‘<strong>api-version</strong>‘).</p>
+<p>Microsoft’s versioning library also supports some other (custom) versioning methods like versioning with <em>Accept Header</em>, versioning with <em>Content-Type Header</em>, versioning with <em>Custom Media Types</em>, versioning by namespaces, versioning by writing our own controller/action resolver. For versioning by <em>Media Type</em>, you can take a look at an example described on <a href="https://github.com/microsoft/aspnet-api-versioning/wiki/Versioning-by-Media-Type" target="_blank" rel="noopener">Microsoft’s official wiki page</a> for this type of versioning. A nice example of more specific versioning, using the <em>Accept Header</em>, can be found on <a href="https://fearofoblivion.com/versioning-asp-net-core-api-using-header" target="_blank" rel="noopener">this blog post</a>. These versioning strategies are more specific to implement, and their implementation differs from API to API. Anyway, the most common API versioning methods are with HTTP Header and/or with a  query-string parameter, as well as versioning by URL path segment.</p>
+<h3 id="Adding-versioning-informations-to-controllers-and-methods"><a href="#Adding-versioning-informations-to-controllers-and-methods" class="headerlink" title="Adding versioning informations to controllers and methods"></a>Adding versioning informations to controllers and methods</h3><img src="/2020/05/Overview-of-API-Versioning-in-ASP-NET-Core-3-0/reindeer.jpg" class="" title="Let us decorate our controllers">
+
+<p>After choosing a versioning strategy, and configuring it in the <em>ConfigureServices</em> method, we can start versioning our API endpoints. Microsofts versioning package provides several attributes that we can apply to our controllers and methods. </p>
+<p>When configuring versioning on controllers and methods, these are the rules to follow:</p>
+<ul>
+<li><p>The initial version of a controller may not have any API version attribution and will implicitly become the configured default API version. The default configuration uses the value 1.0.</p>
+</li>
+<li><p>Annotating our controller with, for example, <code>[ApiVersion(&quot;1.0&quot;)]</code> attribute, means that this controller supports API version 1.0</p>
+</li>
+<li><p>Controllers can support multiple API versions. Simply, apply multiple <code>[ApiVersion(...)]</code> attributes on the controller</p>
+</li>
+<li><p>To differentiate between multiple versions supported by our controller, we annotate controller methods with <code>[MapToApiVersion(...)]</code> attribute. This approach is useful for small version differences (example: <code>[MapToApiVersion(&quot;1.0&quot;)]</code>).</p>
+</li>
+<li><p>If we are versioning our API with URL path segment, beside <code>[ApiVersion(...)]</code> attributes we also need to set the URL segment of the route where the API version will be read from:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">Route(<span class="meta-string">"api/v&#123;version:apiVersion&#125;/[controller]"</span>)</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>To deprecate some version in our API controller, we need to set <em>Deprecated</em> flag to true: <code>[ApiVersion(&quot;1.0&quot;, Deprecated = true)]</code>.</p>
+</li>
+<li><p>It is a good practice to explicitly version all our services. However, if we have a service that is version-neutral, we will mark that controller with <code>[ApiVersionNeutral]</code> attribute.</p>
+</li>
+<li><p>All of the service API version informations are accessible via extension methods. Beginning in the ASP.NET Core 3.0 version, Model Binding is also supported. So, in our controller methods, we can get the requested API version by calling: </p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> apiVersion = HttpContext.GetRequestedApiVersion();</span><br></pre></td></tr></table></figure></li>
+<li><p>And, for getting an API version with model binder, our method would look like:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// supported in 3.0+</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> IActionResult <span class="title">Get</span>(<span class="params"> <span class="keyword">int</span> id, ApiVersion apiVersion </span>)</span> &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="API-Version-Conventions"><a href="#API-Version-Conventions" class="headerlink" title="API Version Conventions"></a>API Version Conventions</h3><img src="/2020/05/Overview-of-API-Versioning-in-ASP-NET-Core-3-0/reindeer-fight.jpg" class="" title="Attributes vs Conventions">
+
+<p>Besides attributing our controllers and methods, another way to configure service versioning is with API versioning conventions. There are several reasons why would we use API versioning conventions instead of attributes: </p>
+<ul>
+<li>Centralized management and application of all service API versions</li>
+<li>Apply API versions to services defined by controllers in external .NET assemblies</li>
+<li>Dynamically apply API versions from external sources; for example, from the configuration</li>
+</ul>
+<p>Example of setting API version to the controller, analog to applying <code>[ApiVersion(&quot;1.0&quot;)]</code> attribute:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning( options =&gt;</span><br><span class="line">&#123;</span><br><span class="line">	options.Conventions.Controller&lt;MyController&gt;().HasApiVersion(<span class="number">1</span>, <span class="number">0</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>Example of setting deprecated API version as well as versioning controller actions:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">services.AddApiVersioning( options =&gt;</span><br><span class="line">&#123;</span><br><span class="line">	options.Conventions.Controller&lt;MyController&gt;()	   </span><br><span class="line">		    .HasDeprecatedApiVersion(<span class="number">1</span>, <span class="number">0</span>)</span><br><span class="line">               .HasApiVersion(<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">               .HasApiVersion(<span class="number">2</span>, <span class="number">0</span>)</span><br><span class="line">               .Action(c =&gt; c.Get1_0()).MapToApiVersion(<span class="number">1</span>, <span class="number">0</span>)</span><br><span class="line">               .Action(c =&gt; c.Get1_1()).MapToApiVersion(<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">               .Action(c =&gt; c.Get2_0()).MapToApiVersion(<span class="number">2</span>, <span class="number">0</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>It is possible to use both API version conventions together with versioning attributes at the same time.</p>
+<p>There is also an option to define custom conventions. Beginning in .NET Core 3.0, there is a <code>IControllerConvention</code> interface for this purpose. Custom conventions are added to the convention builder through the API versioning options:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">options.Conventions.Add(<span class="keyword">new</span> MyCustomConvention());</span><br></pre></td></tr></table></figure>
+
+<p>Lastly, we can version our API’s by namespace convention they reside in:</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">options.Conventions.Add(<span class="keyword">new</span> VersionByNamespaceConvention());</span><br></pre></td></tr></table></figure>
+
+<p>The defined namespace name must conform to the API version format so that it can be parsed. </p>
+<p>For example, namespacing our controllers like on the following folder structure:</p>
+<ul>
+<li>api/v1/UsersController</li>
+<li>api/v2/UsersController</li>
+<li>api/v2_1/UsersController</li>
+</ul>
+<p>would map to the following URL paths:</p>
+<pre><code>- api/1.0/users
+- api/2.0/users
+- api/2.1/users</code></pre><p>This was a brief overview of the API versioning in the ASP.NET Core 3.0+. Well configured API versioning can be really useful, both for the users and API developers, and there shouldn’t be a reason why not to version every API. If you have read this far, I hope you are more confident about choosing an appropriate way to go with versioning your API.</p>
+<img src="/2020/05/Overview-of-API-Versioning-in-ASP-NET-Core-3-0/reindeer-looks.jpg" class="" title="What is your opinion on this matter?">
+
+<p>Have you used API Versioning in your ASP.NET Core projects? Was it useful, and did it save you from problems you might’ve seen otherwise? Let me know, and share it in the comments!</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                        <li>
+                            <a href="https://twitter.com/vladimir_vozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/vladimirvozar" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/vladimir-vozar-64093676/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:vozarvladimir@gmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 Vladimir Vozar<br></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'www-codeinsights-net';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
