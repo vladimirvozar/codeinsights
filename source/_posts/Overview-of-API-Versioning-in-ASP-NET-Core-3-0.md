@@ -1,10 +1,21 @@
 ---
 title: Overview of API Versioning in ASP.NET Core 3.0+
-subtitle: Describing the most common API versioning methods using Microsoft.AspNetCore.Mvc.Versioning package functionality
-tags: [WEB-API, Versioning, ENF]
-categories: [WEB-API, ASP.NET Core]
+tags:
+  - WEB-API
+  - Versioning
+  - ENF
+categories:
+  - WEB-API
+  - ASP.NET Core
+subtitle: >-
+  Describing the most common API versioning methods using
+  Microsoft.AspNetCore.Mvc.Versioning package functionality
+date: 2020-05-28 20:24:19
 ---
+
 ### Overview of API Versioning in ASP.NET Core 3.0+ ###
+
+>This article is also available on [Exception Not Found blog](https://exceptionnotfound.net/overview-of-api-versioning-in-asp-net-core-3-0/)
 
 Very often, API versioning is something that is being thought of only when there is a need for changing our API. However, we shouldn't wait until we need such a thing before we implement it. Rather, we should have a versioning strategy, that we will follow while building our API endpoints, right from the beginning of API development.
 
